@@ -1,0 +1,2 @@
+twilio==9.3.7
+google-cloud-storage==2.18.2
