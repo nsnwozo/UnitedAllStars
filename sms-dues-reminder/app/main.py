@@ -29,10 +29,12 @@ def main() -> int:
         logger.info("No members with outstanding dues. Nothing to send.")
         return 0
 
+    
     sender = TwilioSmsSender(
-        account_sid=settings.twilio_account_sid,
-        auth_token=settings.twilio_auth_token,
-        from_number=settings.twilio_from_number,
+      account_sid=settings.twilio_account_sid,
+      api_key=settings.twilio_api_key,
+      api_secret=settings.twilio_api_secret,
+      from_number=settings.twilio_from_number,
     )
 
     sent, failed = 0, 0
