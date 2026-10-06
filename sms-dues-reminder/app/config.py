@@ -3,8 +3,8 @@ import os
 from dataclasses import dataclass
 
 DEFAULT_MESSAGE_TEMPLATE = (
-    "Hi {name}, this is a reminder that your outstanding dues balance is "
-    "${balance}. Please settle it at your earliest convenience. Thank you."
+    "Good Day {name}, this is a gentle reminder that your outstanding UAS dues balance is ${balance}. Please zelle your dues payment to unitedallstarsmd@gmail.com at your earliest convenience." 
+    "Also, please reach out to the FinSec if you require payment arrangement options. Thank you."
 )
 
 
