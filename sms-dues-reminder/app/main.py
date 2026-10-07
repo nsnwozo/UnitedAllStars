@@ -40,7 +40,7 @@ def main() -> int:
     sent, failed = 0, 0
     for member in due_members:
         message_body = settings.message_template.format(
-            name=member.name, balance=f"{member.balance:.2f}"
+            name=member.name, balance=f"${member.balance:.2f}"
         )
         try:
             sender.send(to_number=member.phone, body=message_body)
